@@ -1,0 +1,75 @@
+[debug] [2022-07-17T17:14:57.599Z] ----------------------------------------------------------------------
+[debug] [2022-07-17T17:14:57.601Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-07-17T17:14:57.601Z] CLI Version:   11.2.2
+[debug] [2022-07-17T17:14:57.602Z] Platform:      win32
+[debug] [2022-07-17T17:14:57.602Z] Node Version:  v16.15.0
+[debug] [2022-07-17T17:14:57.603Z] Time:          Mon Jul 18 2022 00:14:57 GMT+0700 (Indochina Time)
+[debug] [2022-07-17T17:14:57.603Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-17T17:14:57.665Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-17T17:14:57.666Z] > authorizing via signed-in user (hikam4828@gmail.com)
+[debug] [2022-07-17T17:14:57.666Z] [iam] checking project tugas-akhir-web-c76a9 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-07-17T17:14:57.668Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/tugas-akhir-web-c76a9:testIamPermissions [none]
+[debug] [2022-07-17T17:14:57.668Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tugas-akhir-web-c76a9:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-07-17T17:14:58.889Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/tugas-akhir-web-c76a9:testIamPermissions 200
+[debug] [2022-07-17T17:14:58.889Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tugas-akhir-web-c76a9:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-07-17T17:14:58.890Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/tugas-akhir-web-c76a9/serviceAccounts/tugas-akhir-web-c76a9@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2022-07-17T17:14:58.890Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/tugas-akhir-web-c76a9/serviceAccounts/tugas-akhir-web-c76a9@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2022-07-17T17:14:59.948Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/tugas-akhir-web-c76a9/serviceAccounts/tugas-akhir-web-c76a9@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2022-07-17T17:14:59.948Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/tugas-akhir-web-c76a9/serviceAccounts/tugas-akhir-web-c76a9@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2022-07-17T17:14:59.949Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/tugas-akhir-web-c76a9 [none]
+[debug] [2022-07-17T17:15:00.269Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/tugas-akhir-web-c76a9 200
+[debug] [2022-07-17T17:15:00.269Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/tugas-akhir-web-c76a9 {"projectId":"tugas-akhir-web-c76a9","projectNumber":"658744604428","displayName":"Tugas Akhir WEB","name":"projects/tugas-akhir-web-c76a9","resources":{"hostingSite":"tugas-akhir-web-c76a9","realtimeDatabaseInstance":"tugas-akhir-web-c76a9-default-rtdb","storageBucket":"tugas-akhir-web-c76a9.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'tugas-akhir-web-c76a9'...
+[info] 
+[info] i  deploying firestore, functions, hosting 
+[debug] [2022-07-17T17:15:00.351Z] TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+    at new NodeError (node:internal/errors:372:5)
+    at validateString (node:internal/validators:120:11)
+    at Object.join (node:path:429:7)
+    at Config.path (C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:123:45)
+    at getChildEnvironment (C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\lifecycleHooks.js:51:49)
+    at runTargetCommands (C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\lifecycleHooks.js:72:14)
+    at C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\lifecycleHooks.js:121:24
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async chain (C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:33:9)
+    at async deploy (C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:67:5)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-07-17T17:16:28.650Z] ----------------------------------------------------------------------
+[debug] [2022-07-17T17:16:28.652Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only functions
+[debug] [2022-07-17T17:16:28.652Z] CLI Version:   11.2.2
+[debug] [2022-07-17T17:16:28.652Z] Platform:      win32
+[debug] [2022-07-17T17:16:28.652Z] Node Version:  v16.15.0
+[debug] [2022-07-17T17:16:28.653Z] Time:          Mon Jul 18 2022 00:16:28 GMT+0700 (Indochina Time)
+[debug] [2022-07-17T17:16:28.653Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-17T17:16:28.711Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-17T17:16:28.712Z] > authorizing via signed-in user (hikam4828@gmail.com)
+[debug] [2022-07-17T17:16:28.712Z] [iam] checking project tugas-akhir-web-c76a9 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2022-07-17T17:16:28.714Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/tugas-akhir-web-c76a9:testIamPermissions [none]
+[debug] [2022-07-17T17:16:28.715Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tugas-akhir-web-c76a9:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2022-07-17T17:16:28.994Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/tugas-akhir-web-c76a9:testIamPermissions 200
+[debug] [2022-07-17T17:16:28.994Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tugas-akhir-web-c76a9:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2022-07-17T17:16:28.995Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/tugas-akhir-web-c76a9/serviceAccounts/tugas-akhir-web-c76a9@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2022-07-17T17:16:28.995Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/tugas-akhir-web-c76a9/serviceAccounts/tugas-akhir-web-c76a9@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2022-07-17T17:16:30.001Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/tugas-akhir-web-c76a9/serviceAccounts/tugas-akhir-web-c76a9@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2022-07-17T17:16:30.001Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/tugas-akhir-web-c76a9/serviceAccounts/tugas-akhir-web-c76a9@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[info] 
+[info] === Deploying to 'tugas-akhir-web-c76a9'...
+[info] 
+[info] i  deploying functions 
+[debug] [2022-07-17T17:16:30.094Z] TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+    at new NodeError (node:internal/errors:372:5)
+    at validateString (node:internal/validators:120:11)
+    at Object.join (node:path:429:7)
+    at Config.path (C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:123:45)
+    at getChildEnvironment (C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\lifecycleHooks.js:51:49)
+    at runTargetCommands (C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\lifecycleHooks.js:72:14)
+    at C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\lifecycleHooks.js:121:24
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async chain (C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:33:9)
+    at async deploy (C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:67:5)
+[error] 
+[error] Error: An unexpected error has occurred.
